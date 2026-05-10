@@ -662,6 +662,83 @@
           <section class="section" id="publications">
             <h2>Publications</h2>
             <article class="item">
+              <div class="date">Under Review</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>
+                      A Recursive-Additive Closure for Chain-Weighted Superlative
+                      Growth Rates
+                    </h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Background</h4>
+                      <p>
+                        Chain-weighted superlative indexes provide meaningful
+                        growth rates but do not produce real levels that add up
+                        across components. This creates persistent problems for
+                        growth accounting and decomposition work that needs exact
+                        adding-up.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Data</h4>
+                      <p>
+                        The current paper applies the framework to BEA U.S.
+                        industry national accounts data. Related research work also
+                        tested recursive real value-added construction using
+                        Japanese national accounts data.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methodology</h4>
+                      <p>
+                        The paper introduces a recursive-additive aggregation
+                        operator that treats official component superlative growth
+                        rates as primitives and constructs an exactly additive
+                        system of real levels over time.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Findings</h4>
+                      <p>
+                        Conventional chain-weighted real levels show large and
+                        persistent non-additivity, while the growth-rate distortion
+                        from recursive additivity is negligible and robust to
+                        base-year normalization.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Interpretation</h4>
+                      <p>
+                        The result reframes non-additivity as a missing accounting
+                        closure rather than an unavoidable limitation of
+                        superlative index theory.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Working paper under review at Journal of Economics.
+                  <a href="A_Recursive_Additive_Closure_for_Chain_Weighted_Superlative_Growth_Rates.pdf">PDF</a>.
+                </p>
+                <p class="abstract">
+                  Abstract: Chain-weighted superlative indexes deliver
+                  economically meaningful growth rates but do not generate real
+                  levels that add up across components. This paper introduces a
+                  recursive-additive aggregation operator that takes official
+                  component growth rates as primitives and constructs an exactly
+                  additive system of real levels over time.
+                </p>
+                <div class="chips">
+                  <span class="chip">Index numbers</span>
+                  <span class="chip">National accounts</span>
+                  <span class="chip">Growth accounting</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
               <div class="date">2026</div>
               <div>
                 <details class="work">
@@ -723,7 +800,7 @@
                 <p class="meta">
                   Journal of Environmental Policy and Administration, 33,
                   141-182. Co-first author with Moon Joon Kim.
-                  <a href="https://jepa.or.kr/_PR/view/?aidx=49044&bidx=4405">Article</a>.
+                  <a href="https://jepa.or.kr/_PR/view/?aidx=49044&amp;bidx=4405">Article</a>.
                 </p>
                 <p class="abstract">
                   Abstract: We construct a high-resolution spatiotemporal panel
@@ -803,7 +880,7 @@
                       <h4>Interpretation</h4>
                   <p>
                     The results frame AI adoption as a capability-based process:
-                    firms with scale, data infrastructure, software, R&D, and
+                    firms with scale, data infrastructure, software, R&amp;D, and
                     organizational capital are better positioned to adopt AI.
                     The productivity evidence is consistent with the productivity
                     J-curve idea: AI may require complementary intangible investment,
@@ -834,107 +911,121 @@
                 </p>
               </div>
             </article>
+          </section>
+
+          <section class="section" id="projects">
+            <h2>Projects</h2>
             <article class="item">
-              <div class="date">Under Review</div>
+              <div class="date">2026</div>
               <div>
                 <details class="work">
                   <summary>
-                    <h3>
-                      A Recursive-Additive Closure for Chain-Weighted Superlative
-                      Growth Rates
-                    </h3>
+                    <h3>Automated Classification of Educational AI Use Cases</h3>
                   </summary>
                   <div class="detail-grid">
                     <div class="detail-block">
-                      <h4>Background</h4>
+                      <h4>Contribution</h4>
                       <p>
-                        Chain-weighted superlative indexes provide meaningful
-                        growth rates but do not produce real levels that add up
-                        across components. This creates persistent problems for
-                        growth accounting and decomposition work that needs exact
-                        adding-up.
+                        Built the production data pipeline for identifying AI use
+                        cases and institutional adoption in U.S. public K-12
+                        education. Implemented collection, enrichment,
+                        classification, storage, audit, and validation components
+                        rather than only a one-off classifier.
                       </p>
                     </div>
                     <div class="detail-block">
-                      <h4>Data</h4>
+                      <h4>Methods</h4>
                       <p>
-                        The current paper applies the framework to BEA U.S.
-                        industry national accounts data. Related research work also
-                        tested recursive real value-added construction using
-                        Japanese national accounts data.
+                        Designed a two-stage LLM workflow: triage classifies each
+                        article as use case, adoption, or drop; extraction runs
+                        only on retained records and populates structured fields
+                        on institution, actor, AI product, workflow, outcome, and
+                        review status. Added BigQuery progress tracking,
+                        deduplication views, manual-review thresholds, and
+                        human-annotation exports for precision evaluation.
                       </p>
                     </div>
                     <div class="detail-block">
-                      <h4>Methodology</h4>
+                      <h4>Output</h4>
                       <p>
-                        The paper introduces a recursive-additive aggregation
-                        operator that treats official component superlative growth
-                        rates as primitives and constructs an exactly additive
-                        system of real levels over time.
-                      </p>
-                    </div>
-                    <div class="detail-block">
-                      <h4>Findings</h4>
-                      <p>
-                        Conventional chain-weighted real levels show large and
-                        persistent non-additivity, while the growth-rate distortion
-                        from recursive additivity is negligible and robust to
-                        base-year normalization.
-                      </p>
-                    </div>
-                    <div class="detail-block">
-                      <h4>Interpretation</h4>
-                      <p>
-                        The result reframes non-additivity as a missing accounting
-                        closure rather than an unavoidable limitation of
-                        superlative index theory.
+                        Deployed Cloud Run services and batch scripts for
+                        large-scale classification from raw article tables,
+                        including NewsAPI/RSS/district-source collection,
+                        full-text scraping, source audits, final snapshot exports,
+                        and evaluation samples.
                       </p>
                     </div>
                   </div>
                 </details>
                 <p class="meta">
-                  Working paper under review at Journal of Economics.
-                  <a href="Recursive_Additive_Closure_JEZN.pdf">PDF</a>.
+                  Community Informatics Lab, George Mason University
                 </p>
-                <p class="abstract">
-                  Abstract: Chain-weighted superlative indexes deliver
-                  economically meaningful growth rates but do not generate real
-                  levels that add up across components. This paper introduces a
-                  recursive-additive aggregation operator that takes official
-                  component growth rates as primitives and constructs an exactly
-                  additive system of real levels over time.
+                <p>
+                  Research infrastructure for measuring AI use cases and adoption
+                  in U.S. public K-12 education from public news and institutional
+                  sources.
                 </p>
                 <div class="chips">
-                  <span class="chip">Index numbers</span>
-                  <span class="chip">National accounts</span>
-                  <span class="chip">Growth accounting</span>
+                  <span class="chip">LLMs</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">BigQuery</span>
+                  <span class="chip">Google Cloud</span>
                 </div>
               </div>
             </article>
             <article class="item">
               <div class="date">2025</div>
               <div>
-                <h3>
-                  UNDRR, GCF, BOAD and Early Warning for All Partners Join Hands
-                  to Empower Togo
-                </h3>
+                <details class="work">
+                  <summary>
+                    <h3>Chain-weighted National Accounts and Non-additivity</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Contribution</h4>
+                      <p>
+                        Implemented recursive real value-added calculations for
+                        Japanese national accounts data and extended the same
+                        accounting logic to U.S. BEA industry data for the
+                        recursive-additive closure paper.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methods</h4>
+                      <p>
+                        Treated published component chain-growth rates as
+                        primitives, recursively accumulated component real levels,
+                        defined aggregates as the exact sum of components, and
+                        measured the implied deviation from official
+                        chain-weighted aggregate growth.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Output</h4>
+                      <p>
+                        Produced empirical workbooks and figures documenting
+                        non-additivity in chain-weighted levels and showing that
+                        recursive additivity restores exact accounting identities
+                        with negligible growth-rate distortion.
+                      </p>
+                    </div>
+                  </div>
+                </details>
                 <p class="meta">
-                  United Nations Office for Disaster Risk Reduction, 17 April
-                  2025. Author: Jaewon Park.
-                  <a href="https://www.undrr.org/news/undrr-green-climate-fund-west-african-development-bank-and-early-warning-all-partners-join">Article</a>.
+                  Asia KLEMS and Seoul National University Institute of Economic
+                  Research
                 </p>
-                <p class="abstract">
-                  Article on a UNDRR, Green Climate Fund, and West African
-                  Development Bank Training of Trainers workshop supporting
-                  Togo's disaster risk reduction, climate information, and early
-                  warning systems capacity.
+                <p>
+                  Empirical implementation of an additive closure for
+                  chain-weighted national accounts.
                 </p>
+                <div class="chips">
+                  <span class="chip">Japan SNA</span>
+                  <span class="chip">BEA</span>
+                  <span class="chip">Chain weighting</span>
+                </div>
               </div>
             </article>
-          </section>
-
-          <section class="section" id="projects">
-            <h2>Projects</h2>
             <article class="item">
               <div class="date">2024-2025</div>
               <div>
@@ -1048,121 +1139,22 @@
                 </div>
               </div>
             </article>
-            <article class="item">
-              <div class="date">2025</div>
-              <div>
-                <details class="work">
-                  <summary>
-                    <h3>Chain-weighted National Accounts and Non-additivity</h3>
-                  </summary>
-                  <div class="detail-grid">
-                    <div class="detail-block">
-                      <h4>Contribution</h4>
-                      <p>
-                        Implemented recursive real value-added calculations for
-                        Japanese national accounts data and extended the same
-                        accounting logic to U.S. BEA industry data for the
-                        recursive-additive closure paper.
-                      </p>
-                    </div>
-                    <div class="detail-block">
-                      <h4>Methods</h4>
-                      <p>
-                        Treated published component chain-growth rates as
-                        primitives, recursively accumulated component real levels,
-                        defined aggregates as the exact sum of components, and
-                        measured the implied deviation from official
-                        chain-weighted aggregate growth.
-                      </p>
-                    </div>
-                    <div class="detail-block">
-                      <h4>Output</h4>
-                      <p>
-                        Produced empirical workbooks and figures documenting
-                        non-additivity in chain-weighted levels and showing that
-                        recursive additivity restores exact accounting identities
-                        with negligible growth-rate distortion.
-                      </p>
-                    </div>
-                  </div>
-                </details>
-                <p class="meta">
-                  Asia KLEMS and Seoul National University Institute of Economic
-                  Research
-                </p>
-                <p>
-                  Empirical implementation of an additive closure for
-                  chain-weighted national accounts.
-                </p>
-                <div class="chips">
-                  <span class="chip">Japan SNA</span>
-                  <span class="chip">BEA</span>
-                  <span class="chip">Chain weighting</span>
-                </div>
-              </div>
-            </article>
-            <article class="item">
-              <div class="date">2025-2026</div>
-              <div>
-                <details class="work">
-                  <summary>
-                    <h3>Automated Classification of Educational AI Use Cases</h3>
-                  </summary>
-                  <div class="detail-grid">
-                    <div class="detail-block">
-                      <h4>Contribution</h4>
-                      <p>
-                        Built the production data pipeline for identifying AI use
-                        cases and institutional adoption in U.S. public K-12
-                        education. Implemented collection, enrichment,
-                        classification, storage, audit, and validation components
-                        rather than only a one-off classifier.
-                      </p>
-                    </div>
-                    <div class="detail-block">
-                      <h4>Methods</h4>
-                      <p>
-                        Designed a two-stage LLM workflow: triage classifies each
-                        article as use case, adoption, or drop; extraction runs
-                        only on retained records and populates structured fields
-                        on institution, actor, AI product, workflow, outcome, and
-                        review status. Added BigQuery progress tracking,
-                        deduplication views, manual-review thresholds, and
-                        human-annotation exports for precision evaluation.
-                      </p>
-                    </div>
-                    <div class="detail-block">
-                      <h4>Output</h4>
-                      <p>
-                        Deployed Cloud Run services and batch scripts for
-                        large-scale classification from raw article tables,
-                        including NewsAPI/RSS/district-source collection,
-                        full-text scraping, source audits, final snapshot exports,
-                        and evaluation samples.
-                      </p>
-                    </div>
-                  </div>
-                </details>
-                <p class="meta">
-                  Community Informatics Lab, George Mason University
-                </p>
-                <p>
-                  Research infrastructure for measuring AI use cases and adoption
-                  in U.S. public K-12 education from public news and institutional
-                  sources.
-                </p>
-                <div class="chips">
-                  <span class="chip">LLMs</span>
-                  <span class="chip">Python</span>
-                  <span class="chip">BigQuery</span>
-                  <span class="chip">Google Cloud</span>
-                </div>
-              </div>
-            </article>
           </section>
 
           <section class="section" id="experience">
             <h2>Experience</h2>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <h3>Research Assistant, Community Informatics Lab</h3>
+                <p class="meta">
+                  George Mason University, PI: Prof. Myeong Lee
+                </p>
+                <p>
+                  Automated Classification of Educational AI Use Cases project.
+                </p>
+              </div>
+            </article>
             <article class="item">
               <div class="date">2025-2026</div>
               <div>
@@ -1179,14 +1171,16 @@
               </div>
             </article>
             <article class="item">
-              <div class="date">2026</div>
+              <div class="date">2025</div>
               <div>
-                <h3>Research Assistant, Community Informatics Lab</h3>
+                <h3>Administrative Assistant</h3>
                 <p class="meta">
-                  George Mason University, PI: Prof. Myeong Lee
+                  United Nations Office for Disaster Risk Reduction, Incheon
                 </p>
                 <p>
-                  Automated Classification of Educational AI Use Cases project.
+                  Supported Togo Training of Trainers workshop, MCR2030/Incheon
+                  resilience materials, school safety programme communications,
+                  translation, reporting, and event coordination.
                 </p>
               </div>
             </article>
@@ -1215,20 +1209,6 @@
                 </p>
               </div>
             </article>
-            <article class="item">
-              <div class="date">2025</div>
-              <div>
-                <h3>Administrative Assistant</h3>
-                <p class="meta">
-                  United Nations Office for Disaster Risk Reduction, Incheon
-                </p>
-                <p>
-                  Supported Togo Training of Trainers workshop, MCR2030/Incheon
-                  resilience materials, school safety programme communications,
-                  translation, reporting, and event coordination.
-                </p>
-              </div>
-            </article>
           </section>
 
           <section class="section" id="features">
@@ -1238,6 +1218,14 @@
               <div>
                 <h3>
                   <a href="https://chss.gmu.edu/chss-outstanding-graduates/spring-2026-outstanding-grads/outstanding-undergraduate-student-honorees-spring-2026?profile_id=2533">CHSS Outstanding Undergraduate Student Honoree</a>
+                </h3>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <h3>
+                  <a href="https://www.undrr.org/news/undrr-green-climate-fund-west-african-development-bank-and-early-warning-all-partners-join">UNDRR, GCF, BOAD and Early Warning for All Partners Join Hands to Empower Togo</a>
                 </h3>
               </div>
             </article>
