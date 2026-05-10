@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jaewon Park | CV</title>
+    <meta
+      name="description"
+      content="CV and selected work for Joel Park."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1e2328;
+        --muted: #5f686f;
+        --line: #d7dde0;
+        --paper: #f7f6f1;
+        --surface: #ffffff;
+        --accent: #0b6f70;
+        --accent-2: #9a4f2f;
+        --accent-3: #425f8a;
+        --shadow: 0 18px 50px rgba(34, 39, 44, 0.12);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: rgba(11, 111, 112, 0.35);
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        text-decoration-color: var(--accent);
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 28px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 10px 0 30px;
+      }
+
+      .mark {
+        display: inline-grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        background: var(--surface);
+        color: var(--accent);
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px;
+        font-size: 0.93rem;
+      }
+
+      .nav a {
+        padding: 8px 10px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: var(--muted);
+      }
+
+      .nav a:hover {
+        background: rgba(30, 35, 40, 0.06);
+        color: var(--ink);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+        gap: 34px;
+        align-items: end;
+        min-height: 62vh;
+        padding: 58px 0 70px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(3.2rem, 8vw, 7.2rem);
+        line-height: 0.92;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        max-width: 680px;
+        margin: 28px 0 0;
+        color: var(--muted);
+        font-size: 1.14rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 10px 14px;
+        border: 1px solid var(--ink);
+        border-radius: 6px;
+        background: var(--ink);
+        color: var(--surface);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.93rem;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+      }
+
+      .profile-panel {
+        display: grid;
+        gap: 18px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      .portrait {
+        aspect-ratio: 4 / 3;
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid rgba(30, 35, 40, 0.08);
+        background: #e9ece8;
+      }
+
+      .portrait img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 42% 48%;
+      }
+
+      .quick-facts {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+      }
+
+      .fact {
+        display: grid;
+        grid-template-columns: 88px minmax(0, 1fr);
+        gap: 12px;
+        font-size: 0.94rem;
+      }
+
+      .fact dt {
+        color: var(--muted);
+      }
+
+      .fact dd {
+        margin: 0;
+        font-weight: 650;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 270px minmax(0, 1fr);
+        gap: 44px;
+        padding: 54px 0 80px;
+      }
+
+      .side {
+        position: sticky;
+        top: 24px;
+        align-self: start;
+        display: grid;
+        gap: 22px;
+      }
+
+      .contact {
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.68);
+      }
+
+      .contact h2,
+      .section h2 {
+        margin: 0 0 18px;
+        font-size: 0.86rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .contact p {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .section {
+        padding: 0 0 42px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .section + .section {
+        padding-top: 42px;
+      }
+
+      .section:last-child {
+        border-bottom: 0;
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 24px;
+        padding: 24px 0;
+      }
+
+      .item:first-of-type {
+        padding-top: 0;
+      }
+
+      .item + .item {
+        border-top: 1px solid rgba(30, 35, 40, 0.1);
+      }
+
+      .date {
+        color: var(--accent-2);
+        font-weight: 800;
+        font-size: 0.92rem;
+      }
+
+      h3 {
+        margin: 0 0 6px;
+        font-size: 1.18rem;
+        line-height: 1.25;
+      }
+
+      details.work {
+        display: grid;
+        gap: 10px;
+      }
+
+      details.work summary {
+        cursor: pointer;
+        list-style: none;
+      }
+
+      details.work summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details.work summary h3 {
+        display: inline;
+        text-decoration: underline;
+        text-decoration-color: rgba(11, 111, 112, 0.28);
+        text-underline-offset: 0.2em;
+      }
+
+      details.work summary:hover h3 {
+        text-decoration-color: var(--accent);
+      }
+
+      details.work summary::after {
+        content: "+";
+        margin-left: 8px;
+        color: var(--accent);
+        font-weight: 800;
+      }
+
+      details.work[open] summary::after {
+        content: "-";
+      }
+
+      .meta {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-weight: 650;
+      }
+
+      .abstract {
+        margin-top: 10px;
+      }
+
+      .detail-grid {
+        display: grid;
+        gap: 12px;
+        margin-top: 16px;
+        padding: 16px;
+        border-left: 3px solid var(--accent);
+        background: rgba(255, 255, 255, 0.58);
+      }
+
+      .detail-block h4 {
+        margin: 0 0 4px;
+        color: var(--ink);
+        font-size: 0.88rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .detail-block p {
+        margin: 0;
+      }
+
+      .item p,
+      .item ul {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .item ul {
+        padding-left: 1.1rem;
+      }
+
+      .item li + li {
+        margin-top: 6px;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .chip {
+        padding: 5px 9px;
+        border: 1px solid rgba(66, 95, 138, 0.25);
+        border-radius: 999px;
+        color: var(--accent-3);
+        background: rgba(66, 95, 138, 0.07);
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .print-note {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 860px) {
+        .page {
+          padding: 20px;
+        }
+
+        .hero,
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 34px 0 46px;
+        }
+
+        .side {
+          position: static;
+        }
+
+        .contact {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 8px 18px;
+        }
+
+        .contact h2 {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .topbar {
+          align-items: flex-start;
+        }
+
+        .nav {
+          max-width: 220px;
+        }
+
+        h1 {
+          font-size: 3.3rem;
+        }
+
+        .contact,
+        .item {
+          grid-template-columns: 1fr;
+        }
+
+        .item {
+          gap: 8px;
+        }
+
+        .profile-panel {
+          padding: 18px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .page {
+          max-width: none;
+          padding: 0.45in;
+        }
+
+        .topbar,
+        .actions,
+        .profile-panel,
+        .side {
+          display: none;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 0 0 24px;
+        }
+
+        h1 {
+          font-size: 44px;
+        }
+
+        main {
+          display: block;
+          padding: 24px 0 0;
+        }
+
+        .section {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar" aria-label="Site header">
+        <a class="mark" href="#top" aria-label="Jaewon Park home">JP</a>
+        <nav class="nav" aria-label="CV sections">
+          <a href="#education">Education</a>
+          <a href="#thesis">Thesis</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#features">Features</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+        </nav>
+      </header>
+
+      <section class="hero" id="top">
+        <div>
+          <p class="eyebrow">Curriculum Vitae</p>
+          <h1>Jaewon Park</h1>
+          <p class="subtitle">
+            Economics researcher working on productivity measurement, applied
+            econometrics, AI use cases in education, and public-sector data
+            systems.
+          </p>
+          <div class="actions">
+            <a class="button" href="mailto:jpark261@gmu.edu">Email</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Profile summary">
+          <div class="portrait">
+            <img
+              src="profile.jpg"
+              alt="Jaewon Park presenting honors thesis research"
+            />
+          </div>
+          <dl class="quick-facts">
+            <div class="fact">
+              <dt>Focus</dt>
+              <dd>Productivity, AI, applied economics</dd>
+            </div>
+            <div class="fact">
+              <dt>Location</dt>
+              <dd>Fairfax, VA</dd>
+            </div>
+            <div class="fact">
+              <dt>Degree</dt>
+              <dd>B.A. Economics, GMU, 2026 expected</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <main>
+        <aside class="side" aria-label="Contact details">
+          <section class="contact">
+            <h2>Contact</h2>
+            <p><a href="mailto:jpark261@gmu.edu">jpark261@gmu.edu</a></p>
+            <p><a href="https://linkedin.com/in/joel0703">LinkedIn</a></p>
+            <p>Fairfax, VA</p>
+          </section>
+
+          <p class="print-note">
+            Tip: use your browser print dialog to save this page as a clean PDF.
+          </p>
+        </aside>
+
+        <div class="content">
+          <section class="section" id="education">
+            <h2>Education</h2>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <h3>George Mason University</h3>
+                <p class="meta">B.A. Economics, expected 2026</p>
+                <p>
+                  GPA 3.90/4.00. Summa Cum Laude and Departmental Honors in
+                  Economics.
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="thesis">
+            <h2>Thesis</h2>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>The Uneven Growth Cost of Political Instability</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Background</h4>
+                      <p>
+                        The thesis revisits whether political instability slows
+                        economic growth and asks for whom the effect is largest.
+                        It builds on Aisen and Veiga (2013), but argues that pooled
+                        cross-country estimates can hide large differences between
+                        fragile low-income economies and institutionally
+                        consolidated high-income economies.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Data</h4>
+                      <p>
+                        The analysis uses a global panel of 185 countries over
+                        1960-2023, organized into non-overlapping five-year
+                        periods. Growth and macroeconomic controls are updated
+                        using Penn World Table 11.0, with political instability
+                        measured primarily through cabinet changes.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methodology</h4>
+                      <p>
+                        The thesis first performs a near-reproduction of Aisen and
+                        Veiga's dynamic panel growth regressions, then extends the
+                        sample and estimates heterogeneous effects by income group.
+                        The estimator comparison includes pooled OLS,
+                        within-country fixed effects, Difference-GMM, and
+                        System-GMM with Windmeijer-corrected standard errors.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Findings</h4>
+                      <p>
+                        The negative instability-growth association survives the
+                        move from PWT 6.2 to PWT 11.0. In the extended
+                        heterogeneity analysis, cabinet changes reduce per-capita
+                        growth most strongly in low-income countries, have a
+                        smaller negative effect in middle-income economies, and
+                        show a small positive association in high-income countries.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Interpretation</h4>
+                      <p>
+                        The results support an institutional complementarity
+                        interpretation: weak state capacity, shallow financial
+                        markets, and weaker property-rights enforcement amplify
+                        the macroeconomic cost of political disruption. The thesis
+                        treats the income-group results as exploratory rather than
+                        definitive causal estimates because interaction-term
+                        instrumentation remains a limitation.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Honors Thesis in Economics, George Mason University. Advisor:
+                  Prof. Jason Dunick.
+                  <a href="Park_Jaewon_HonorsThesis.pdf">PDF</a>.
+                </p>
+                <p class="abstract">
+                  Abstract: This paper re-examines the relationship between
+                  political instability and economic growth using a global panel of
+                  185 countries over 1960-2023. A near-reproduction of Aisen and
+                  Veiga (2013) confirms that the negative instability-growth
+                  association is robust across specifications. Extending the sample
+                  and allowing for income-group heterogeneity, political
+                  instability significantly reduces per-capita growth in
+                  low-income countries, has a smaller negative effect in
+                  middle-income economies, and shows a statistically positive
+                  association in high-income countries. The findings are consistent
+                  with an institutional complementarity channel in which weak state
+                  capacity amplifies the macroeconomic costs of political
+                  disruption.
+                </p>
+                <div class="chips">
+                  <span class="chip">Political instability</span>
+                  <span class="chip">System GMM</span>
+                  <span class="chip">Cross-country growth</span>
+                  <span class="chip">Institutions</span>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="publications">
+            <h2>Publications</h2>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>
+                      Nonlinear Impacts of Particulate Matter on Solar PV Generation
+                    </h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Background</h4>
+                      <p>
+                        Solar output is often treated as a function of sunlight and
+                        weather, but particulate pollution can reduce generation
+                        through atmospheric scattering, absorption, and panel
+                        soiling. Chungcheongnam-do is a useful case because coal
+                        plants, industrial complexes, coastal inflow, and expanding
+                        solar capacity coexist in the same region.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Data</h4>
+                      <p>
+                        The study constructs a high-frequency spatiotemporal panel
+                        by merging hourly solar PV generation with PM10, PM2.5, and
+                        meteorological variables for Chungcheongnam-do.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methodology</h4>
+                      <p>
+                        Hourly fixed-effects regressions with radiative and weather
+                        controls are estimated using Newey-West standard errors.
+                        The analysis also uses nonparametric exploration and
+                        wind-speed by 16-direction interaction models to test
+                        nonlinear and directional heterogeneity.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Findings</h4>
+                      <p>
+                        PM10 and PM2.5 both reduce PV generation, with PM2.5 showing
+                        the larger estimated effect. The pollution-PV relationship is
+                        nonlinear and potentially non-monotonic, and generation
+                        losses intensify under coastal-to-inland wind directions.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Interpretation</h4>
+                      <p>
+                        The results suggest that solar forecasting and grid
+                        operation should model air quality and meteorology jointly,
+                        especially in regions where renewable generation is exposed
+                        to industrial pollution and transport-pathway effects.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Journal of Environmental Policy and Administration, 33,
+                  141-182. Co-first author with Moon Joon Kim.
+                  <a href="06_박재원_김문준_최종.pdf">PDF</a>.
+                </p>
+                <p class="abstract">
+                  Abstract: We construct a high-resolution spatiotemporal panel
+                  for Chungcheongnam-do, Korea, by merging hourly solar PV output
+                  with PM10/PM2.5 and meteorological variables, and estimate the
+                  impact of air pollution on PV performance. Hourly fixed-effects
+                  regressions with radiative and weather controls show significant
+                  negative effects of both PM measures, with larger impacts for
+                  PM2.5. Nonparametric evidence suggests a nonlinear relationship
+                  between pollution and PV output, while wind-speed and direction
+                  interactions reveal stronger losses under coastal-to-inland
+                  inflow directions.
+                </p>
+                <div class="chips">
+                  <span class="chip">Solar PV</span>
+                  <span class="chip">Air pollution</span>
+                  <span class="chip">Panel data</span>
+                  <span class="chip">Korea</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>AI and Intangible Investments in Korea</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Background</h4>
+                      <p>
+                        The project asks which firms adopt AI and whether
+                        intangible assets, firm scale, and complementary digital
+                        technologies help explain uneven AI diffusion across Korean
+                        firms.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Data</h4>
+                      <p>
+                        The analysis uses Statistics Korea's Survey of Business
+                        Activities from 2017 to 2023, covering annual firm-level
+                        records with employment, tangible and intangible assets,
+                        value added, industry classification, and adoption of AI,
+                        Big Data, IoT, Cloud, 3D printing, and robotics.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methodology</h4>
+                      <p>
+                        Descriptive industry and firm-size comparisons are combined
+                        with an AI intensity measure based on complementary
+                        technologies and adoption purposes. The project uses growth
+                        accounting-style decomposition of labor productivity growth
+                        into real value-added and employment growth, and estimates
+                        dynamic labor productivity models using OLS, fixed effects,
+                        first differences, and System GMM. A binary probit model is
+                        also used to study AI adoption determinants, with marginal
+                        effects computed by the delta method.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Findings</h4>
+                      <p>
+                        AI adoption rose from 1.4% of sample firms in 2017 to 5.9%
+                        in 2023. AI firms are more common in services, ICT-related
+                        sectors, and large firms. AI adopters have about twice the
+                        average labor productivity of non-adopters, and adopters
+                        hold substantially larger intangible assets. Average labor
+                        productivity growth is higher for AI firms than non-AI firms,
+                        but the dynamic panel estimates do not provide a definitive
+                        causal AI effect on productivity growth.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Interpretation</h4>
+                  <p>
+                    The results frame AI adoption as a capability-based process:
+                    firms with scale, data infrastructure, software, R&D, and
+                    organizational capital are better positioned to adopt AI.
+                    The productivity evidence is consistent with the productivity
+                    J-curve idea: AI may require complementary intangible investment,
+                    digital capacity, and time before its effects become visible in
+                    measured productivity.
+                  </p>
+                </div>
+              </div>
+            </details>
+                <p class="meta">
+                  CompNet-Japan Workshop, Gakushuin University, Tokyo.
+                  Co-authored with Hak Kil Pyo, Keun Hee Rhee, and Hyun Kim.
+                </p>
+                <p class="abstract">
+                  Abstract: Using firm-level records from Statistics Korea's
+                  Survey of Business Activities, this project studies the rise of
+                  AI adoption in Korean firms and its relationship with intangible
+                  assets, complementary digital technologies, firm size, and labor
+                  productivity. The analysis combines adoption-rate comparisons,
+                  AI intensity construction, labor-productivity growth accounting,
+                  binary probit adoption models, and dynamic panel estimators
+                  including fixed effects, first differences, and System GMM. AI
+                  adoption is concentrated among larger, more
+                  intangible-capital-intensive, and ICT-connected firms; AI firms
+                  show higher average productivity levels and growth, but the
+                  estimated direct effect of AI on productivity growth is not
+                  definitive.
+                </p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">Under Review</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>
+                      A Recursive-Additive Closure for Chain-Weighted Superlative
+                      Growth Rates
+                    </h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Background</h4>
+                      <p>
+                        Chain-weighted superlative indexes provide meaningful
+                        growth rates but do not produce real levels that add up
+                        across components. This creates persistent problems for
+                        growth accounting and decomposition work that needs exact
+                        adding-up.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Data</h4>
+                      <p>
+                        The current paper applies the framework to BEA U.S.
+                        industry national accounts data. Related research work also
+                        tested recursive real value-added construction using
+                        Japanese national accounts data.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methodology</h4>
+                      <p>
+                        The paper introduces a recursive-additive aggregation
+                        operator that treats official component superlative growth
+                        rates as primitives and constructs an exactly additive
+                        system of real levels over time.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Findings</h4>
+                      <p>
+                        Conventional chain-weighted real levels show large and
+                        persistent non-additivity, while the growth-rate distortion
+                        from recursive additivity is negligible and robust to
+                        base-year normalization.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Interpretation</h4>
+                      <p>
+                        The result reframes non-additivity as a missing accounting
+                        closure rather than an unavoidable limitation of
+                        superlative index theory.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Working paper under review at Journal of Economics.
+                  <a href="Recursive_Additive_Closure_JEZN.pdf">PDF</a>.
+                </p>
+                <p class="abstract">
+                  Abstract: Chain-weighted superlative indexes deliver
+                  economically meaningful growth rates but do not generate real
+                  levels that add up across components. This paper introduces a
+                  recursive-additive aggregation operator that takes official
+                  component growth rates as primitives and constructs an exactly
+                  additive system of real levels over time.
+                </p>
+                <div class="chips">
+                  <span class="chip">Index numbers</span>
+                  <span class="chip">National accounts</span>
+                  <span class="chip">Growth accounting</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <h3>
+                  UNDRR, GCF, BOAD and Early Warning for All Partners Join Hands
+                  to Empower Togo
+                </h3>
+                <p class="meta">
+                  United Nations Office for Disaster Risk Reduction, 17 April
+                  2025. Author: Jaewon Park.
+                  <a href="https://www.undrr.org/news/undrr-green-climate-fund-west-african-development-bank-and-early-warning-all-partners-join">Article</a>.
+                </p>
+                <p class="abstract">
+                  Article on a UNDRR, Green Climate Fund, and West African
+                  Development Bank Training of Trainers workshop supporting
+                  Togo's disaster risk reduction, climate information, and early
+                  warning systems capacity.
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="projects">
+            <h2>Projects</h2>
+            <article class="item">
+              <div class="date">2024-2025</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>KDB Quarterly Productivity and Market Linkage Study</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Contribution</h4>
+                      <p>
+                        Led the empirical section linking Korea's quarterly
+                        industry productivity estimates to financial-market
+                        indicators. Built the quarterly KOSPI industry-index
+                        series from monthly market data and matched it to
+                        all-industry, manufacturing, and service-sector TFP
+                        measures.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methods</h4>
+                      <p>
+                        Estimated bivariate VAR/TVAR specifications for TFP and
+                        stock-price indexes, tested weak exogeneity with LM-style
+                        diagnostics, evaluated Granger-predictive relationships,
+                        and computed impulse response functions to trace dynamic
+                        responses between productivity and equity-market shocks.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Output</h4>
+                      <p>
+                        Produced the report's market-linkage tables and figures,
+                        including sector-specific VAR estimates, Granger-causality
+                        interpretation, and IRF/OIRF results used in the final KDB
+                        presentation and draft report.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Korea Development Bank research project support.
+                </p>
+                <p>
+                  Econometric analysis of whether productivity indicators and
+                  equity-market movements contain predictive information for one
+                  another at quarterly frequency.
+                </p>
+                <div class="chips">
+                  <span class="chip">VAR</span>
+                  <span class="chip">Granger causality</span>
+                  <span class="chip">IRF</span>
+                  <span class="chip">TFP</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2024</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>KPC Data Update and Growth Accounting Workset</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Contribution</h4>
+                      <p>
+                        Maintained and updated the KPC quarterly productivity
+                        database used for potential-growth estimation. Integrated
+                        provisional macro and industry data into capital, labor,
+                        output, and utilization workbooks, then reconciled those
+                        inputs for Model 1, a standard Solow growth-accounting
+                        framework, and Model 2, a Fernald (2014)-style framework
+                        that adjusts factor inputs for capacity utilization and
+                        labor quality.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methods</h4>
+                      <p>
+                        Converted annual capital-stock and investment information
+                        into quarterly industry series, constructed labor-input
+                        measures from hours and employment data, used electricity
+                        consumption and capacity-utilization indicators to adjust
+                        factor inputs, and computed value-added growth accounting
+                        decompositions into capital, labor, and TFP components.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Output</h4>
+                      <p>
+                        Delivered updated capital-stock, labor-input, GDP,
+                        electricity-use, and growth-accounting spreadsheets that
+                        fed the KPC potential-growth and productivity reporting
+                        workflow.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Research assistant work for Prof. Hak Kil Pyo
+                </p>
+                <p>
+                  Construction of quarterly factor-input and growth-accounting
+                  worksets for Korea's industry-level productivity estimates.
+                </p>
+                <div class="chips">
+                  <span class="chip">Capital stock</span>
+                  <span class="chip">Growth accounting</span>
+                  <span class="chip">Quarterly data</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>Chain-weighted National Accounts and Non-additivity</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Contribution</h4>
+                      <p>
+                        Implemented recursive real value-added calculations for
+                        Japanese national accounts data and extended the same
+                        accounting logic to U.S. BEA industry data for the
+                        recursive-additive closure paper.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methods</h4>
+                      <p>
+                        Treated published component chain-growth rates as
+                        primitives, recursively accumulated component real levels,
+                        defined aggregates as the exact sum of components, and
+                        measured the implied deviation from official
+                        chain-weighted aggregate growth.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Output</h4>
+                      <p>
+                        Produced empirical workbooks and figures documenting
+                        non-additivity in chain-weighted levels and showing that
+                        recursive additivity restores exact accounting identities
+                        with negligible growth-rate distortion.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Asia KLEMS and Seoul National University Institute of Economic
+                  Research
+                </p>
+                <p>
+                  Empirical implementation of an additive closure for
+                  chain-weighted national accounts.
+                </p>
+                <div class="chips">
+                  <span class="chip">Japan SNA</span>
+                  <span class="chip">BEA</span>
+                  <span class="chip">Chain weighting</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025-2026</div>
+              <div>
+                <details class="work">
+                  <summary>
+                    <h3>Automated Classification of Educational AI Use Cases</h3>
+                  </summary>
+                  <div class="detail-grid">
+                    <div class="detail-block">
+                      <h4>Contribution</h4>
+                      <p>
+                        Built the production data pipeline for identifying AI use
+                        cases and institutional adoption in U.S. public K-12
+                        education. Implemented collection, enrichment,
+                        classification, storage, audit, and validation components
+                        rather than only a one-off classifier.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Methods</h4>
+                      <p>
+                        Designed a two-stage LLM workflow: triage classifies each
+                        article as use case, adoption, or drop; extraction runs
+                        only on retained records and populates structured fields
+                        on institution, actor, AI product, workflow, outcome, and
+                        review status. Added BigQuery progress tracking,
+                        deduplication views, manual-review thresholds, and
+                        human-annotation exports for precision evaluation.
+                      </p>
+                    </div>
+                    <div class="detail-block">
+                      <h4>Output</h4>
+                      <p>
+                        Deployed Cloud Run services and batch scripts for
+                        large-scale classification from raw article tables,
+                        including NewsAPI/RSS/district-source collection,
+                        full-text scraping, source audits, final snapshot exports,
+                        and evaluation samples.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+                <p class="meta">
+                  Community Informatics Lab, George Mason University
+                </p>
+                <p>
+                  Research infrastructure for measuring AI use cases and adoption
+                  in U.S. public K-12 education from public news and institutional
+                  sources.
+                </p>
+                <div class="chips">
+                  <span class="chip">LLMs</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">BigQuery</span>
+                  <span class="chip">Google Cloud</span>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="experience">
+            <h2>Experience</h2>
+            <article class="item">
+              <div class="date">2025-2026</div>
+              <div>
+                <h3>Independent Researcher, Honors Thesis in Economics</h3>
+                <p class="meta">
+                  George Mason University, advisor: Prof. Jason Dunick
+                </p>
+                <p>
+                  Designed and executed a cross-country dynamic panel study on
+                  political instability and growth, including data-vintage
+                  replication, income-group heterogeneity tests, and
+                  OLS/FE/Difference-GMM/System-GMM estimator comparison.
+                </p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <h3>Research Assistant, Community Informatics Lab</h3>
+                <p class="meta">
+                  George Mason University, PI: Prof. Myeong Lee
+                </p>
+                <p>
+                  Automated Classification of Educational AI Use Cases project.
+                </p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2024-2025</div>
+              <div>
+                <h3>Research Assistant, Seoul National University IER</h3>
+                <p class="meta">
+                  Research support for Prof. Hak Kil Pyo and Dr. Ki-hong Choi
+                </p>
+                <p>
+                  KDB quarterly productivity study, KPC productivity data update,
+                  AI and intangible investment project, and chain-weighted
+                  national accounts research.
+                </p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2024</div>
+              <div>
+                <h3>Undergraduate Teaching Assistant</h3>
+                <p class="meta">George Mason University Korea</p>
+                <p>
+                  Assisted Contemporary Microeconomic Principles, Contemporary
+                  Macroeconomic Principles, and Introduction to Mason.
+                </p>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <h3>Administrative Assistant</h3>
+                <p class="meta">
+                  United Nations Office for Disaster Risk Reduction, Incheon
+                </p>
+                <p>
+                  Supported Togo Training of Trainers workshop, MCR2030/Incheon
+                  resilience materials, school safety programme communications,
+                  translation, reporting, and event coordination.
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="features">
+            <h2>Features</h2>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <h3>
+                  <a href="https://chss.gmu.edu/chss-outstanding-graduates/spring-2026-outstanding-grads/outstanding-undergraduate-student-honorees-spring-2026?profile_id=2533">CHSS Outstanding Undergraduate Student Honoree</a>
+                </h3>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="skills">
+            <h2>Skills</h2>
+            <article class="item">
+              <div class="date">Tools</div>
+              <div>
+                <h3>Data, AI, and Research Tools</h3>
+                <p>
+                  Stata, R, LaTeX, Python, SQL, BigQuery, Google Cloud Platform,
+                  data pipelines, model evaluation, and research writing.
+                </p>
+                <div class="chips">
+                  <span class="chip">Research design</span>
+                  <span class="chip">Data engineering</span>
+                  <span class="chip">Evaluation</span>
+                  <span class="chip">Technical writing</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
