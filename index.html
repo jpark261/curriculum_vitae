@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jaewon Park | CV</title>
+    <title>Jaewon Park | Personal Research Website</title>
     <meta
       name="description"
-      content="CV and selected work for Joel Park."
+      content="Personal research website for Jaewon Park, an economics researcher working on applied econometrics, productivity, AI adoption, and research data infrastructure."
     />
     <style>
       :root {
@@ -133,6 +133,23 @@
         font-size: 1.14rem;
       }
 
+      .research-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .research-line span {
+        padding: 6px 10px;
+        border: 1px solid rgba(11, 111, 112, 0.18);
+        border-radius: 999px;
+        background: rgba(11, 111, 112, 0.06);
+        color: var(--accent);
+        font-size: 0.84rem;
+        font-weight: 750;
+      }
+
       .actions {
         display: flex;
         flex-wrap: wrap;
@@ -244,6 +261,17 @@
         font-size: 0.95rem;
       }
 
+      .contact ul {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .contact li + li {
+        margin-top: 7px;
+      }
+
       .section {
         padding: 0 0 42px;
         border-bottom: 1px solid var(--line);
@@ -337,6 +365,19 @@
         padding: 16px;
         border-left: 3px solid var(--accent);
         background: rgba(255, 255, 255, 0.58);
+      }
+
+      .link-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin-top: 12px;
+      }
+
+      .text-link {
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: var(--accent);
       }
 
       .detail-block h4 {
@@ -487,26 +528,35 @@
         <a class="mark" href="#top" aria-label="Jaewon Park home">JP</a>
         <nav class="nav" aria-label="CV sections">
           <a href="#education">Education</a>
-          <a href="#thesis">Thesis</a>
-          <a href="#publications">Publications</a>
+          <a href="#publications">Research</a>
+          <a href="#presentations">Presentations</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#features">Features</a>
+          <a href="#code">Code</a>
           <a href="#skills">Skills</a>
         </nav>
       </header>
 
       <section class="hero" id="top">
         <div>
-          <p class="eyebrow">Curriculum Vitae</p>
+          <p class="eyebrow">Personal Research Website</p>
           <h1>Jaewon Park</h1>
           <p class="subtitle">
-            Economics researcher working on macroeconomics and
-            econometrics
+            Economics researcher working on applied econometrics,
+            productivity measurement, AI adoption, and research data
+            infrastructure.
           </p>
+          <div class="research-line" aria-label="Research interests">
+            <span>Applied Econometrics</span>
+            <span>Productivity</span>
+            <span>AI and Firms</span>
+            <span>Data Infrastructure</span>
+          </div>
           <div class="actions">
             <a class="button" href="mailto:jpark261@gmu.edu">Email</a>
             <a class="button" href="Park_Jaewon_CV.pdf">CV</a>
+            <a class="button secondary" href="Jaewon_Park_Code_Sample_Portfolio.pdf">Code Sample</a>
           </div>
         </div>
 
@@ -520,7 +570,7 @@
           <dl class="quick-facts">
             <div class="fact">
               <dt>Focus</dt>
-              <dd>Econometrics, Applied Economics</dd>
+              <dd>Applied Econometrics, Productivity, AI</dd>
             </div>
             <div class="fact">
               <dt>Location</dt>
@@ -528,7 +578,7 @@
             </div>
             <div class="fact">
               <dt>Degree</dt>
-              <dd>B.A. Economics</dd>
+              <dd>B.A. Economics, George Mason University</dd>
             </div>
           </dl>
         </aside>
@@ -542,6 +592,21 @@
             <p><a href="https://linkedin.com/in/joel0703">LinkedIn</a></p>
             <p>Fairfax, VA</p>
           </section>
+          <section class="contact">
+            <h2>Research Interests</h2>
+            <ul>
+              <li>Applied econometrics and panel data methods</li>
+              <li>Productivity, growth accounting, and national accounts</li>
+              <li>AI adoption, intangible investment, and data systems</li>
+              <li>Political economy, institutions, and growth</li>
+            </ul>
+          </section>
+          <section class="contact">
+            <h2>Materials</h2>
+            <p><a href="Park_Jaewon_CV.pdf">Curriculum Vitae</a></p>
+            <p><a href="Jaewon_Park_Code_Sample_Portfolio.pdf">Code Sample Portfolio</a></p>
+            <p><a href="Park_Jaewon_HonorsThesis.pdf">Honors Thesis</a></p>
+          </section>
         </aside>
 
         <div class="content">
@@ -553,18 +618,18 @@
                 <h3>George Mason University</h3>
                 <p class="meta">B.A. Economics</p>
                 <p>
-                  GPA: 3.91/4.00 (<i>Summa Cum Laude</i>).</p>
+                  GPA: 3.91/4.00 (<i>Summa Cum Laude</i>).
+                </p>
                 <p>
                   Honors: CHSS Outstanding Student Honorees & Departmental Honors in
                   Economics
-                </p>
                 </p>
               </div>
             </article>
           </section>
 
           <section class="section" id="thesis">
-            <h2>Thesis</h2>
+            <h2>Honors Thesis</h2>
             <article class="item">
               <div class="date">2026</div>
               <div>
@@ -656,12 +721,15 @@
                   <span class="chip">Cross-country growth</span>
                   <span class="chip">Institutions</span>
                 </div>
+                <div class="link-row">
+                  <a class="text-link" href="Park_Jaewon_HonorsThesis.pdf">Read thesis PDF</a>
+                </div>
               </div>
             </article>
           </section>
 
           <section class="section" id="publications">
-            <h2>Publications</h2>
+            <h2>Working Papers & Publications</h2>
             <article class="item">
               <div class="date">Under Review</div>
               <div>
@@ -736,6 +804,9 @@
                   <span class="chip">Index numbers</span>
                   <span class="chip">National accounts</span>
                   <span class="chip">Growth accounting</span>
+                </div>
+                <div class="link-row">
+                  <a class="text-link" href="A_Recursive_Additive_Closure_for_Chain_Weighted_Superlative_Growth_Rates.pdf">Working paper PDF</a>
                 </div>
               </div>
             </article>
@@ -820,6 +891,10 @@
                   <span class="chip">Air pollution</span>
                   <span class="chip">Panel data</span>
                   <span class="chip">Korea</span>
+                </div>
+                <div class="link-row">
+                  <a class="text-link" href="https://jepa.or.kr/_PR/view/?aidx=49044&amp;bidx=4405">Journal article</a>
+                  <a class="text-link" href="06_박재원_김문준_최종.pdf">PDF</a>
                 </div>
               </div>
             </article>
@@ -910,6 +985,73 @@
                   estimated direct effect of AI on productivity growth is not
                   definitive.
                 </p>
+                <div class="chips">
+                  <span class="chip">AI adoption</span>
+                  <span class="chip">Intangible assets</span>
+                  <span class="chip">Firm-level data</span>
+                  <span class="chip">System GMM</span>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="presentations">
+            <h2>Presentations</h2>
+            <article class="item">
+              <div class="date">2026</div>
+              <div>
+                <h3>The Uneven Growth Cost of Political Instability</h3>
+                <p class="meta">
+                  Honors Thesis Research Presentation, George Mason University
+                </p>
+                <p>
+                  Presented a dynamic panel analysis of political instability and
+                  economic growth across income groups, emphasizing estimator
+                  choice, data-vintage replication, and institutional
+                  complementarity as an interpretation of heterogeneous effects.
+                </p>
+                <div class="chips">
+                  <span class="chip">Difference GMM</span>
+                  <span class="chip">System GMM</span>
+                  <span class="chip">Growth</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <h3>AI and Intangible Investments in Korea</h3>
+                <p class="meta">
+                  CompNet-Japan Workshop, Gakushuin University, Tokyo
+                </p>
+                <p>
+                  Contributed firm-level empirical analysis on AI adoption,
+                  intangible capital, complementary digital technologies, and
+                  productivity using Statistics Korea's Survey of Business
+                  Activities.
+                </p>
+                <div class="chips">
+                  <span class="chip">AI</span>
+                  <span class="chip">Intangible capital</span>
+                  <span class="chip">Productivity</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="date">2025</div>
+              <div>
+                <h3>Non-additivity in Chain-weighted National Accounts</h3>
+                <p class="meta">Asia KLEMS research presentation support</p>
+                <p>
+                  Prepared empirical materials and figures on recursive-additive
+                  real value-added construction using Japanese national accounts
+                  and U.S. BEA industry data.
+                </p>
+                <div class="chips">
+                  <span class="chip">National accounts</span>
+                  <span class="chip">Chain weighting</span>
+                  <span class="chip">KLEMS</span>
+                </div>
               </div>
             </article>
           </section>
@@ -927,11 +1069,13 @@
                     <div class="detail-block">
                       <h4>Contribution</h4>
                       <p>
-                        Built the production data pipeline for identifying AI use
+                        Built the research data pipeline for identifying AI use
                         cases and institutional adoption in U.S. public K-12
-                        education. Implemented collection, enrichment,
-                        classification, storage, audit, and validation components
-                        rather than only a one-off classifier.
+                        education. The work covered source discovery, article
+                        collection, full-text parsing, deduplication, LLM
+                        classification, structured extraction, BigQuery storage,
+                        audit tables, and validation exports rather than only a
+                        one-off classifier.
                       </p>
                     </div>
                     <div class="detail-block">
@@ -941,19 +1085,21 @@
                         article as use case, adoption, or drop; extraction runs
                         only on retained records and populates structured fields
                         on institution, actor, AI product, workflow, outcome, and
-                        review status. Added BigQuery progress tracking,
-                        deduplication views, manual-review thresholds, and
+                        review status. Added source-specific query buckets,
+                        stable URL hashes, manual-review thresholds, local and
+                        BigQuery audit rows, deduplication views, and
                         human-annotation exports for precision evaluation.
                       </p>
                     </div>
                     <div class="detail-block">
                       <h4>Output</h4>
                       <p>
-                        Deployed Cloud Run services and batch scripts for
-                        large-scale classification from raw article tables,
-                        including NewsAPI/RSS/district-source collection,
-                        full-text scraping, source audits, final snapshot exports,
-                        and evaluation samples.
+                        Deployed Cloud Run-oriented Flask services and batch
+                        scripts for large-scale classification from raw article
+                        tables, including NewsAPI, SerpApi, GNews, GDELT, RSS,
+                        and district-source collection, full-text scraping,
+                        source audits, final snapshot exports, and evaluation
+                        samples.
                       </p>
                     </div>
                   </div>
@@ -972,6 +1118,9 @@
                   <span class="chip">BigQuery</span>
                   <span class="chip">Google Cloud</span>
                 </div>
+                <div class="link-row">
+                  <a class="text-link" href="Jaewon_Park_Code_Sample_Portfolio.pdf">Code sample portfolio</a>
+                </div>
               </div>
             </article>
             <article class="item">
@@ -988,7 +1137,9 @@
                         Implemented recursive real value-added calculations for
                         Japanese national accounts data and extended the same
                         accounting logic to U.S. BEA industry data for the
-                        recursive-additive closure paper.
+                        recursive-additive closure paper. Helped turn the
+                        accounting problem into a reproducible empirical
+                        workflow with robustness checks across base years.
                       </p>
                     </div>
                     <div class="detail-block">
@@ -1007,7 +1158,9 @@
                         Produced empirical workbooks and figures documenting
                         non-additivity in chain-weighted levels and showing that
                         recursive additivity restores exact accounting identities
-                        with negligible growth-rate distortion.
+                        with negligible growth-rate distortion. The outputs
+                        supported both the working paper and Asia KLEMS
+                        presentation materials.
                       </p>
                     </div>
                   </div>
@@ -1042,8 +1195,9 @@
                         industry productivity estimates to financial-market
                         indicators. Built the quarterly KOSPI industry-index
                         series from monthly market data and matched it to
-                        all-industry, manufacturing, and service-sector TFP
-                        measures.
+                        all-industry, manufacturing, and service-sector TFP,
+                        labor productivity, and productivity-growth measures
+                        used in the report.
                       </p>
                     </div>
                     <div class="detail-block">
@@ -1054,6 +1208,9 @@
                         diagnostics, evaluated Granger-predictive relationships,
                         and computed impulse response functions to trace dynamic
                         responses between productivity and equity-market shocks.
+                        The empirical design treated productivity indicators and
+                        market indexes as jointly dynamic series rather than as
+                        static correlations.
                       </p>
                     </div>
                     <div class="detail-block">
@@ -1062,7 +1219,7 @@
                         Produced the report's market-linkage tables and figures,
                         including sector-specific VAR estimates, Granger-causality
                         interpretation, and IRF/OIRF results used in the final KDB
-                        presentation and draft report.
+                        presentation and report discussion.
                       </p>
                     </div>
                   </div>
@@ -1101,7 +1258,9 @@
                         inputs for Model 1, a standard Solow growth-accounting
                         framework, and Model 2, a Fernald (2014)-style framework
                         that adjusts factor inputs for capacity utilization and
-                        labor quality.
+                        labor quality. The work required checking industry
+                        classifications, quarterly transformations, and the
+                        accounting consistency of component inputs.
                       </p>
                     </div>
                     <div class="detail-block">
@@ -1121,7 +1280,8 @@
                         Delivered updated capital-stock, labor-input, GDP,
                         electricity-use, and growth-accounting spreadsheets that
                         fed the KPC potential-growth and productivity reporting
-                        workflow.
+                        workflow, including materials used for model comparison
+                        and quarterly productivity updates.
                       </p>
                     </div>
                   </div>
@@ -1228,6 +1388,36 @@
                 <h3>
                   <a href="https://www.undrr.org/news/undrr-green-climate-fund-west-african-development-bank-and-early-warning-all-partners-join">UNDRR, GCF, BOAD and Early Warning for All Partners Join Hands to Empower Togo</a>
                 </h3>
+              </div>
+            </article>
+          </section>
+
+          <section class="section" id="code">
+            <h2>Code & Research Infrastructure</h2>
+            <article class="item">
+              <div class="date">Selected</div>
+              <div>
+                <h3>Code Sample Portfolio</h3>
+                <p class="meta">
+                  Python, R, Stata, SQL, BigQuery, Google Cloud Platform
+                </p>
+                <p>
+                  Selected code samples covering LLM-assisted research data
+                  infrastructure, cloud-based article collection and
+                  classification, high-frequency environmental panel construction,
+                  recursive-additive national accounts calculations, dynamic
+                  panel econometrics, and time-series workflows.
+                </p>
+                <div class="chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">R</span>
+                  <span class="chip">Stata</span>
+                  <span class="chip">BigQuery</span>
+                  <span class="chip">GCP</span>
+                </div>
+                <div class="link-row">
+                  <a class="text-link" href="Jaewon_Park_Code_Sample_Portfolio.pdf">Open PDF</a>
+                </div>
               </div>
             </article>
           </section>
